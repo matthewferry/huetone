@@ -7,7 +7,7 @@ export const ContrastBadgeAPCA: FC<{ background: string; color: string }> = ({
   color,
 }) => {
   const cr = apcaContrast(background, color)
-  const displayCr = Math.floor(cr * 10) / 10
+  const displayCr = Math.floor(cr * 100) / 100
   return (
     <Wrapper>
       <Preview style={{ background, color }}>APCA</Preview>
@@ -23,7 +23,7 @@ export const ContrastBadgeWCAG: FC<{ background: string; color: string }> = ({
   color,
 }) => {
   const cr = wcagContrast(background, color)
-  const displayCr = Math.floor(cr * 10) / 10
+  const displayCr = Math.floor(cr * 100) / 100
   return (
     <Wrapper>
       <Preview style={{ background, color }}>WCAG</Preview>

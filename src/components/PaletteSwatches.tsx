@@ -39,7 +39,7 @@ export const PaletteSwatches: FC = () => {
   const getCR = useCallback(
     (hex: string) => {
       let cr = contrast[overlay.mode](versusColor, hex)
-      return cr && Math.floor(cr * 10) / 10
+      return cr && Math.floor(cr * 100) / 100
     },
     [overlay.mode, versusColor]
   )
