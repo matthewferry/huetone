@@ -5,6 +5,7 @@ import example from './example.json'
 import github from './github.json'
 import google from './google.json'
 import ibm from './ibm.json'
+import launchdarkly from './launchdarkly.json'
 import semrush from './semrush.json'
 import stripe from './stripe.json'
 import stripe_dashboard from './stripe_dashboard.json'
@@ -15,6 +16,7 @@ import radix_ui_light from './radix_ui_light.json'
 import tailwind from './tailwind.json'
 
 export const PRESETS: HexPalette[] = [
+  launchdarkly,
   example,
   semrush,
   stripe,
