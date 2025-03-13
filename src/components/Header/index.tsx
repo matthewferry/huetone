@@ -76,7 +76,7 @@ export function Header() {
                 )
               }
             >
-              vs. {overlay.versus}
+              vs. {overlay.versus === 'selected' ? 'black' : 'white'}
             </Button>
           )}
         </ControlGroup>

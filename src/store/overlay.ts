@@ -13,7 +13,7 @@ export const versusColorStore = computed(
   [overlayStore, selectedStore],
   (overlay, selected) => {
     if (overlay.versus === 'selected') {
-      return selected.color.hex
+      return '#181A1F'
     }
     return overlay.versus
   }
